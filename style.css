@@ -1,0 +1,269 @@
+ 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: auto;
+  width: 100vw;
+}
+nav{
+    height: 4vw;
+    width: 100vw;
+    display: flex;
+    background-color: rgb(63, 105, 70);
+    align-items: center;
+    justify-content: space-between;
+    padding-left:  60px;
+    padding-right:  60px;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1000;
+}
+.leftnav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: rgb(235, 213, 184);
+}
+.leftnav h1{
+    margin-right: 40px;
+    
+}
+.leftnav p{
+    gap: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.samebtn{
+    padding: 10px 20px;
+    border-radius: 20px;
+     font-family: cursive;
+     background-color: rgb(235, 213, 184);
+     border: none;
+}
+
+.samebtn:active{
+    scale:calc(0.90)
+}
+main{
+    height: auto;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 500px 300px 100px 450px 500px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "section1 section1 section1-right section1-right"
+                         "sectionbox1 sectionbox2 sectionbox3 sectionbox4"
+                         "midsection midsection midsection-right midsection-right"
+                         "sectioncard1 sectioncard1 sectioncard1 sectioncard1"
+                         "lastsection lastsection lastsection-right lastsection-right" ;
+}
+.section1{
+     background-color: rgb(63, 105, 70);
+    grid-area: section1;
+    padding: 50px 60px;
+}
+.section1 h1{
+    font-size: 80px;
+    line-height: 0.78;
+    margin-bottom: 20px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300;
+}
+.section1 p{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.section1-right{
+    background-color: rgb(63, 105, 70);
+    grid-area: section1-right;
+    padding: 10px 10px;
+}
+.section1-right img{
+    height: 90%;
+    width: 93%;
+    border-radius: 10px;
+}
+.sectionbox1{
+    grid-area: sectionbox1;
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    
+}
+.allimg {
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    
+}
+ 
+.sectionbox2{
+    grid-area: sectionbox2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.allp{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
+}
+.allboxh1{
+    font-weight: 300;
+}
+
+.sectionbox3{
+    grid-area: sectionbox3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.sectionbox4{
+    grid-area: sectionbox4;
+    margin-right: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+.midsection{
+    background-color: rgb(255, 255, 255);
+    grid-area: midsection;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.midsection h1 {
+     margin-left: 60px;
+     font-weight: 300;
+     
+}
+
+.midsection-right{
+    background-color: rgb(255, 255, 255);
+    grid-area: midsection-right;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    justify-content: flex-end;
+    padding-right: 60px;
+    
+}
+.midsection-right h1{
+    width: 320px;
+    font-size: 18px;
+}
+
+
+.sectioncard1{
+    background-color: rgb(255, 255, 255);
+    grid-area: sectioncard1;
+    justify-content: center;
+    gap: 80px;
+    display: flex;
+    position: relative;
+}
+.sectioncard1 img{
+    height: 90%;
+    width: 400px;
+    border-radius: 20px;
+    
+     
+}
+.sectioncard1 h1{
+    position: absolute;
+    z-index: 100;
+    color: aliceblue;
+    font-size: 50px;
+    width: 60px;
+    line-height: 0.80;
+    font-weight: 300;
+
+}
+.fh1{
+    left: 7%;
+    bottom: 15%;
+}
+ .sh1{
+    left: 39%;
+    bottom: 15%;
+ }
+ .th1{
+    left: 70%;
+    bottom: 15%;
+ }
+.lastsection{
+    background-color: rgb(63, 105, 70);
+    grid-area: lastsection;
+    padding: 30px 70px;
+}
+.lastsection img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.lastsection-right{
+    background-color: rgb(63, 105, 70);
+    grid-area: lastsection-right;
+    padding: 30px 0;
+    color: white;
+     
+}
+.lastsection-right h1{
+     font-size: 70px;
+     font-weight: 300;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     line-height: 0.90;
+     margin-bottom: 15px;
+     
+}
+.lastsection-right p{
+   width: 80%;
+   font-size: 18px;
+     line-height: 1.50; 
+     padding: 10px 0; 
+     font-family: Arial, Helvetica, sans-serif;
+     color: rgb(227, 227, 227);
+}
+.lastsection-right h5{
+   font-size: 18px;
+     line-height: 0.30;  
+     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+     font-weight: 100;
+     color: rgb(227, 227, 227);
+}
+.alldot{
+    font-size: 70px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.alldiv{
+    border-radius: 5px;
+    border: 1px solid black;
+    
+}
